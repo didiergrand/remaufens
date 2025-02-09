@@ -1,0 +1,98 @@
+
+/* Widgets
+--------------------------------------------- */
+
+.widget {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+.widget h2{
+  padding: 8px 32px;
+  margin: 0;
+}
+.widget h2:first-child{
+  padding: 16px 32px;
+}
+.widget h3{
+  margin: 0;
+}
+.widget .liens-rapides-content{
+  background-color: var(--color-light-gray);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+.widget .liens-rapides-content > div{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .widget .liens-rapides-content > div{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.widget .liens-rapides-content figure{
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: 16px 24px;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.widget .liens-rapides-content a:hover *{
+  color: var(--color-red);
+}
+.widget .liens-rapides-content a:hover figure{
+  box-shadow: 0 0 0 1px var(--color-red);
+}
+.widget .liens-rapides-content figure img{
+  height: 64px;
+  width: auto;
+  margin-bottom: 8px;
+}
+.widget .liens-rapides-content figure figcaption{
+  margin: 0;
+  color: var(--color-gray);
+}
+.widget .liens-infos-content{
+  background-color: var(--color-light-gray);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+}
+.widget .liens-infos .liens-infos-content img{
+  border-radius: var(--border-radius);
+}
+.widget-content{
+  padding: 8px 32px;
+  margin: 0;
+}
+.widget-content:last-child{
+  padding-bottom: 32px;
+}
+#remaufens-info{
+  background-color: var(--color-light-gray);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+  h2{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 8px 32px;
+    margin: 0;
+  }
+  .widget{
+    background-color: transparent;
+  }
+  .widget-content
+  {
+    padding-bottom: 0 !important;
+  }
+  .wp-block-file{
+    padding: 0 16px;
+  }
+}

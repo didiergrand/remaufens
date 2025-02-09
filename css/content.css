@@ -1,0 +1,101 @@
+/* 
+article .wp-block-image {
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+    display: flex;
+    text-align: left;
+}
+article .wp-block-column .wp-block-image {
+    text-align: center;
+    display: block;
+}
+article .wp-block-image img {
+    border-radius: var(--border-radius);
+    display: block;
+    max-width: 200px;
+}
+article .wp-block-image figcaption {
+    padding: 8px 40px;
+    line-height: 18px;  
+    align-content: flex-start;
+}
+article :where(figure){
+    margin: 0 0 4em;
+}
+article .wp-block-column :where(figure){
+    margin: 0 0 1em;
+}
+article .wp-block-column .wp-block-image figcaption {
+    padding: 8px;
+} */
+ .vignettes .wp-block-column{
+    display: flex;
+ }
+ .vignette {
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+.vignette figcaption {
+    padding: 8px;
+    line-height: 18px;  
+    align-content: flex-start;
+}
+.vignette img {
+    border-radius: var(--border-radius);
+    display: block;
+    max-width: 200px;
+}
+.carte-h{
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+}
+.carte-h img {
+    border-radius: var(--border-radius);
+    display: block;
+    max-width: 200px;
+}
+.carte-h :where(figure){
+    margin: 0;
+}
+.carte-h .wp-block-column{
+    padding: 0 24px;
+}
+.titre-jaune{
+    background-color: var(--color-yellow);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    h2{
+        padding: 8px 16px 8px 24px;
+        color: var(--color-white);
+        margin: 0;
+    }
+    p{
+        background-color: var(--color-light-gray);
+        border-radius: var(--border-radius);
+        padding: 20px;
+        margin:0;
+        flex-grow: 1;
+    }
+}
+.wp-block-esab-accordion-child{
+    border-radius: var(--border-radius) !important;
+}
+#primary .wp-block-esab-accordion .wp-block-esab-accordion-child.esab__active_accordion{
+    border-color: var(--color-red) !important;
+}
+#primary .wp-block-esab-accordion .wp-block-esab-accordion-child.esab__active_accordion .esab__head{
+    background-color: var(--color-red) !important;
+    color: var(--color-white) !important;
+}
+#primary .wp-block-esab-accordion .wp-block-esab-accordion-child.esab__active_accordion .esab__body{
+    border-color: var(--color-red) !important;
+    background-color: var(--color-white) !important;
+}
+#primary .wp-block-esab-accordion .wp-block-esab-accordion-child.esab__active_accordion .esab__heading_tag{
+    color: var(--color-white) !important;
+}
+#primary .wp-block-esab-accordion .wp-block-esab-accordion-child.esab__active_accordion .esab__expand svg{
+    fill: var(--color-white) !important;
+}

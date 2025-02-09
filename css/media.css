@@ -1,0 +1,79 @@
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.wp-block-file a[href$=".doc"]:not(.wp-block-file__button) {
+  background-image: url("/wp-content/themes/remaufens/images/doc.png");
+}
+.wp-block-file a[href$=".docx"]:not(.wp-block-file__button) {
+  background-image: url("/wp-content/themes/remaufens/images/doc.png");
+}
+.wp-block-file a[href$=".xls"]:not(.wp-block-file__button) {
+  background-image: url("/wp-content/themes/remaufens/images/xls.png");
+}
+.wp-block-file a[href$=".xlsx"]:not(.wp-block-file__button) {
+  background-image: url("/wp-content/themes/remaufens/images/xls.png");
+}
+.wp-block-file a[href$=".pdf"]:not(.wp-block-file__button) {
+  background-image: url("/wp-content/themes/remaufens/images/pdf.png");
+}
+
+.wp-block-file a[href$=".pdf"]:not(.wp-block-file__button),
+.wp-block-file a[href$=".doc"]:not(.wp-block-file__button),
+.wp-block-file a[href$=".docx"]:not(.wp-block-file__button),
+.wp-block-file a[href$=".xls"]:not(.wp-block-file__button),
+.wp-block-file a[href$=".xlsx"]:not(.wp-block-file__button) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  &:before{
+    /* preload the image */
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url("/wp-content/themes/remaufens/images/arrow-down-to-line-thin-hover.png"); 
+ }
+  &:after {
+    content: "";
+    background-image: url("/wp-content/themes/remaufens/images/arrow-down-to-line-thin.png");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: right;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+  &:hover{
+    &:after {
+      content: "";
+      background-image: url("/wp-content/themes/remaufens/images/arrow-down-to-line-thin-hover.png");
+      background-repeat: no-repeat;
+      background-size: 28px;
+      background-position: right;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+    }
+  }
+}
+
+.wp-block-file a {
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: 16px;
+  padding: 16px 16px 16px 60px;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius);
+}
+.wp-block-file a.wp-block-file__button {
+  display: none;
+}

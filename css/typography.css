@@ -1,0 +1,105 @@
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: 700;
+}
+
+h2,
+h3{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h2{
+  font-size: 21px;
+}
+h3{
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h1,
+.home-content #bienvenue h3{
+  font-size: 28px;
+  text-transform: none;
+  font-weight: 400;
+}
+footer#colophon h3{
+  font-size: 18px;
+}
+.wp-block-heading {
+  display: flex;
+  align-items: center;
+}
+
+.wp-block-heading img {
+  margin-right: 10px; 
+  max-height: 48px;
+  padding: 8px;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius);
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", courier, monospace;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
